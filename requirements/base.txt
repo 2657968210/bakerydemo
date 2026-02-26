@@ -1,6 +1,9 @@
 Django>=6.0,<6.1
 python-dotenv==1.2.1
 wagtail>=7.2,<7.3
+# Pin newer versions to fix Python 3.12 frozen+slotted dataclass generic instantiation bug (TaskResult[T](...))
+django-tasks>=0.11.0
+modelsearch>=1.2
 wagtail-font-awesome-svg>=1,<2
 django-debug-toolbar>=4.2,<5
 django-extensions==3.2.3
